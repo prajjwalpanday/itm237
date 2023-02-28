@@ -1,0 +1,15 @@
+---
+title: "Instructor"
+---
+
+## Prajjwal Panday
+
+I am a broadly trained geographer with expertise in environmental modeling, hydro-climatology, remote sensing, and geospatial technologies. My research and intellectual interests focuses on using a systems approach to determine linkages between climate variability, anthropogenic changes, and land-water interactions. My research utilizes field-based observations, satellite remote sensing, geospatial data, and process-based modeling to understand terrestrial and hydrological processes across various spatial and temporal scales. Much of my work thus far has focused on the monitoring and modeling of various components of the hydrological cycle in some of the fastest changing regions of the world such as the Himalayas as well as the Amazon. I am also currently working with local watershed organizations and the City of Worcester to install water quality monitoring stations in the Tatnuck Watershed.
+
+### Publications
+
+Climate change and deforestation increase the vulnerability of Amazonian forests to post-fire grass invasion
+Published in Global Ecology and Biogeography, 2021 [link](https://onlinelibrary.wiley.com/doi/10.1111/geb.13388)
+
+Recommended citation: De Faria, B., Staal, A., Martin, P., Panday, P.K., and Dantas, V. (2021). "Climate change and fragmentation boost post-fire grass invasion of Amazonian forests." Global Ecology and Biogeography. .
+

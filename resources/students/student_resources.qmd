@@ -1,0 +1,24 @@
+---
+title: "Student Resources"
+---
+
+## Anaconda Distribution
+A popular and friendly way to use Python is to install the [Anaconda Distribution] that not only ships Python itself but also comes pre-packaged with a lot of third-party libraries. Download Anaconda with Python 3.7 and install it.  
+
+After installation, you will find an entry "Anaconda Navigator" in your start menu. Click on it. A window opens giving you several options to start various applications. We will mostly be working with Jupyter Notebook. Click on "Launch".
+
+Download the Jupyter Notebook from Modules/Day 1 and open it.  See the tips page for details on running Jupyter Notebooks.  Run some of the cells and see what they do.  
+
+
+## Laptop Usage
+Please plan to bring a laptop to class.  If you have installed Anaconda as mentioned in the Setup section above, you will have a head start on the first day and will be able to follow along in class. 
+
+## Textbook
+We will be using  Fundamentals of Python Programming by Lambert (2nd edition).
+
+Other textbook resources include [Think Python, by Allen B. Downey, second edition, O'Reilly, Sebastopol, California](http://greenteapress.com/wp/think-python-2e/). The second edition talks about Python 3. We will be using Python 3.This is an excellent book.  If you plan to learn Python, it is worth having, even if you decide that this class is not for you.  I prefer a paper copy, but you may prefer an electronic copy from the link above.
+
+### When to read the book?
+I find it best to read each chapter two times: once before class, and to read it again after class.  The book is short, and each chapter will make more sense the second time you read it.  
+
+You will find it useful to keep a list of things you don't understand, and try to work through that list.  You can use markers, highlighters, a to-do list, or write on the back of your hand.  Reviewing a list, and updating your understanding of each point, is a good way for you to take charge of your learning.  

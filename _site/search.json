@@ -1,0 +1,429 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ITM 237 - Introduction to Python",
+    "section": "",
+    "text": "Course Instructor: Prajjwal Panday"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "ITM 237 - Introduction to Python",
+    "section": "Welcome",
+    "text": "Welcome\nCourse Summary:\n\nThis course is an introduction to the Python programming language for students. Python is a language with a simple syntax and a powerful set of libraries. We cover data types, loops, strings, lists, methods, graphics, and GUI interfaces. Time permitting, we will discuss tools for data analysis. In-class instruction will focus on case studies tackling business applications. The objective is to help students learn to use Python to solve problems and analyze data.\nAt the end of the semester, the students are expected:\n\n\nTo be able to design Python programs\n\n\nTo be able to analyze data with Python, and\n\n\nTo develop a toolbox of problem-solving strategies, identify, and execute them."
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "ITM 237 - Introduction to Python",
+    "section": "Schedule",
+    "text": "Schedule\n\n\n\nDate\nTopic\nAssignments\n\n\n\n\nJan 17\n[Course Introduction & Syllabus]\n\n\n\nJan 24\n[Intro to Python]\n\n\n\nJan 31\n[XXX]\n\n\n\n2:00 - 2:30\n[XXX]\n\n\n\n2:20 - 3:00\n[XXX]"
+  },
+  {
+    "objectID": "index_1.html",
+    "href": "index_1.html",
+    "title": "Julia Workshop for Data Science",
+    "section": "",
+    "text": "Schedule\n\n\n\nTime\nTopic\nPresenter\n\n\n\n\n11:00 - 11:30\nSession 1: Get Started with Julia\nClaudia Solis-Lemus\n\n\n11:30 - 12:30\nSession 2a: Data Tables and Arrow files\nDouglas Bates\n\n\n12:30 - 1:00\nSession 2b: Interval Overlap\nDouglas Bates\n\n\n1:00 - 2:00\nLunch break\n\n\n\n2:00 - 2:30\nSession 3a: Linear Mixed-effects Models\nDouglas Bates\n\n\n2:20 - 3:00\nSession 3b: Generalized Linear Mixed Models\nDouglas Bates\n\n\n3:00 - 4:00\nSession 4: Hands-on exercise\nSam Ozminkowski and Bella Wu\n\n\n4:00 - 4:15\nCoffee break\n\n\n\n4:15 - 5:00\nPresentation of selected participants’ scripts and Q&A\n\n\n\n5:00 - 5:30\nSession 5: Other important Data Science tools\nClaudia Solis-Lemus\n\n\n5:30 - 6:00\nSession 6: Conclusions and questions\nClaudia Solis-Lemus\n\n\n\n\n\nIn preparation for the workshop\nParticipants are required to follow the next steps before the day of the workshop:\n\nGit clone the workshop repository: git clone https://github.com/crsl4/julia-workshop.git\nInstall Julia. The recommended option is to use JuliaUp:\n\n\nWindows: winget install julia -s msstore\nMac and Linux: curl -fsSL https://install.julialang.org | sh\nHomebrew users: brew install juliaup\n\nAfter JuliaUp is installed, you can install different Julia versions with:\njuliaup add release  ## installs release version\njuliaup add rc       ## installs release candidate version\njuliaup st           ## status of julia versions installed\njuliaup default rc   ## make release candidate version the default\n\nChoose a dataset along with a script to analyze it written in another language (R or python) as we will spend part of the workshop translating participants’ scripts to Julia."
+  },
+  {
+    "objectID": "lecture1.html",
+    "href": "lecture1.html",
+    "title": "Lecture 1",
+    "section": "",
+    "text": "Running Code in the Interactive Shell or Line\nPython is an interpreted language and you can run simple Python expressions and statements in the interactive programming environment called the shell. In Jupyter Notebook, we will run these in a ‘cell’.\n\n\nPrint Function\nWe can also force the output of a value by using the print function. The simples for would look like this.\nprint(<expression>)\nYou can also write a print function that includes two or more expressions separated by commas.\nprint(<expression>, ..., <expression>)\n\n#statements are interpreted one by one\nprint (\"Hello World\")\nprint (\"something else\")\nprint (\"2+2\")\n\nHello World\nsomething else\n2+2\n\n\n\n#Here are some escape sequences\na = \"Hello\\aFUGU\\aSHRIMP\"\nb = 'Hello\\tFUGU\\nSHRIMP' #single quotes work as well \nprint (a,b)\n\n#why do you think the output is like this?\n#try taking the escape sequences to find out\n\nHello\u0007FUGU\u0007SHRIMP Hello FUGU\nSHRIMP"
+  },
+  {
+    "objectID": "lecture3.html",
+    "href": "lecture3.html",
+    "title": "Lecture 3",
+    "section": "",
+    "text": "open source\nhigh level programming language\nobvious, familiar mathematical notation like Matlab\nas powerful for linear algebra as Matlab"
+  },
+  {
+    "objectID": "lecture2.html",
+    "href": "lecture2.html",
+    "title": "Lecture 2",
+    "section": "",
+    "text": "summary(airquality)\n\n# Python program to swap two variables\n\nx = 5\ny = 10\n\n# To take inputs from the user\n#x = input('Enter value of x: ')\n#y = input('Enter value of y: ')\n\n# create a temporary variable and swap the values\ntemp = x\nx = y\ny = temp\n\nprint('The value of x after swapping: {}'.format(x))\nprint('The value of y after swapping: {}'.format(y))\n\nThe value of x after swapping: 10\nThe value of y after swapping: 5\n\n\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\nFigure 1: A line plot on a polar axis"
+  },
+  {
+    "objectID": "lecture5.html",
+    "href": "lecture5.html",
+    "title": "Lecture 5",
+    "section": "",
+    "text": "open source\nhigh level programming language\nobvious, familiar mathematical notation like Matlab\nas powerful for linear algebra as Matlab"
+  },
+  {
+    "objectID": "lecture4.html",
+    "href": "lecture4.html",
+    "title": "Lecture 4",
+    "section": "",
+    "text": "open source\nhigh level programming language\nobvious, familiar mathematical notation like Matlab\nas powerful for linear algebra as Matlab"
+  },
+  {
+    "objectID": "instructor.html",
+    "href": "instructor.html",
+    "title": "Instructor",
+    "section": "",
+    "text": "I am a broadly trained geographer with expertise in environmental modeling, hydro-climatology, remote sensing, and geospatial technologies. My research and intellectual interests focuses on using a systems approach to determine linkages between climate variability, anthropogenic changes, and land-water interactions. My research utilizes field-based observations, satellite remote sensing, geospatial data, and process-based modeling to understand terrestrial and hydrological processes across various spatial and temporal scales. Much of my work thus far has focused on the monitoring and modeling of various components of the hydrological cycle in some of the fastest changing regions of the world such as the Himalayas as well as the Amazon. I am also currently working with local watershed organizations and the City of Worcester to install water quality monitoring stations in the Tatnuck Watershed.\n\n\nClimate change and deforestation increase the vulnerability of Amazonian forests to post-fire grass invasion Published in Global Ecology and Biogeography, 2021 link\nRecommended citation: De Faria, B., Staal, A., Martin, P., Panday, P.K., and Dantas, V. (2021). “Climate change and fragmentation boost post-fire grass invasion of Amazonian forests.” Global Ecology and Biogeography. ."
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/ipykernel-6.21.2.dist-info/licenses/COPYING.html",
+    "href": "quarto_env/lib/python3.9/site-packages/ipykernel-6.21.2.dist-info/licenses/COPYING.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "This project is licensed under the terms of the Modified BSD License (also known as New or Revised or 3-Clause BSD), as follows:\n\nCopyright (c) 2015, IPython Development Team\n\nAll rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the IPython Development Team nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n\nThe IPython Development Team is the set of all contributors to the IPython project. This includes all of the IPython subprojects.\nThe core team that coordinates development on GitHub can be found here: https://github.com/ipython/.\n\n\n\nIPython uses a shared copyright model. Each contributor maintains copyright over their contributions to IPython. But, it is important to note that these contributions are typically only changes to the repositories. Thus, the IPython source code, in its entirety is not the copyright of any single person or institution. Instead, it is the collective copyright of the entire IPython Development Team. If individual contributors want to maintain a record of what changes/contributions they have specific copyright on, they should indicate their copyright in the commit message of the change, when they commit the change to one of the IPython repositories.\nWith this in mind, the following banner should be used in any source code file to indicate the copyright and license terms:\n# Copyright (c) IPython Development Team.\n# Distributed under the terms of the Modified BSD License."
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/jupyter_core-5.2.0.dist-info/licenses/COPYING.html",
+    "href": "quarto_env/lib/python3.9/site-packages/jupyter_core-5.2.0.dist-info/licenses/COPYING.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "Jupyter is licensed under the terms of the Modified BSD License (also known as New or Revised or 3-Clause BSD), as follows:\n\nCopyright (c) 2015-, Jupyter Development Team\n\nAll rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the Jupyter Development Team nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n\nThe Jupyter Development Team is the set of all contributors to the Jupyter project. This includes all of the Jupyter subprojects. A full list with details is kept in the documentation directory, in the file about/credits.txt.\nThe core team that coordinates development on GitHub can be found here: https://github.com/ipython/.\n\n\n\nJupyter uses a shared copyright model. Each contributor maintains copyright over their contributions to Jupyter. It is important to note that these contributions are typically only changes to the repositories. Thus, the Jupyter source code in its entirety is not the copyright of any single person or institution. Instead, it is the collective copyright of the entire Jupyter Development Team. If individual contributors want to maintain a record of what changes/contributions they have specific copyright on, they should indicate their copyright in the commit message of the change, when they commit the change to one of the Jupyter repositories.\nWith this in mind, the following banner should be used in any source code file to indicate the copyright and license terms:\n# Copyright (c) Jupyter Development Team.\n# Distributed under the terms of the Modified BSD License."
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/jupyter_events-0.6.3.dist-info/licenses/COPYING.html",
+    "href": "quarto_env/lib/python3.9/site-packages/jupyter_events-0.6.3.dist-info/licenses/COPYING.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "This project is licensed under the terms of the Modified BSD License (also known as New or Revised or 3-Clause BSD), as follows:\n\nCopyright (c) 2022-, Jupyter Development Team\n\nAll rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the Jupyter Development Team nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n\nThe Jupyter Development Team is the set of all contributors to the Jupyter project. This includes all of the Jupyter subprojects.\nThe core team that coordinates development on GitHub can be found here: https://github.com/jupyter/.\n\n\n\nJupyter uses a shared copyright model. Each contributor maintains copyright over their contributions to Jupyter. But, it is important to note that these contributions are typically only changes to the repositories. Thus, the Jupyter source code, in its entirety is not the copyright of any single person or institution. Instead, it is the collective copyright of the entire Jupyter Development Team. If individual contributors want to maintain a record of what changes/contributions they have specific copyright on, they should indicate their copyright in the commit message of the change, when they commit the change to one of the Jupyter repositories.\nWith this in mind, the following banner should be used in any source code file to indicate the copyright and license terms:\n# Copyright (c) Jupyter Development Team.\n# Distributed under the terms of the Modified BSD License."
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/idna-3.4.dist-info/LICENSE.html",
+    "href": "quarto_env/lib/python3.9/site-packages/idna-3.4.dist-info/LICENSE.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "Copyright (c) 2013-2021, Kim Davies All rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/UnicodePy3.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/UnicodePy3.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "print('☃')\n\n☃"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/JupyterWidgets.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/JupyterWidgets.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "# it should also handle custom msg'es\nlabel.send({'msg': 'Hello'})"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Other Comms.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Other Comms.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "comm = Comm('this-comm-tests-a-missing-handler', data={'id': 'foo'})\n\n\ncomm.send(data={'id': 'bar'})"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/SVG.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/SVG.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "SVG(data='''\n<svg height=\"100\" width=\"100\">\n    <circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"black\" stroke-width=\"2\" fill=\"red\" />\n</svg>''')"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Disable Stdin.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Disable Stdin.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "try:\n    input = raw_input\nexcept:\n    pass\n\nname = input(\"name: \")"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Autokill.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Autokill.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "import os\nimport signal\npid = os.getpid()\nos.kill(pid, signal.SIGTERM)"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/update-display-id.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/update-display-id.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "display('above')\ndisplay_with_id(1, 'here')\ndisplay('below')\n\n'above'\n\n\n8\n\n\n'below'\n\n\n\ndisplay_with_id(2, 'here')\ndisplay_with_id(3, 'there')\ndisplay_with_id(4, 'here')\n\n8\n\n\n6\n\n\n8\n\n\n\ndisplay_with_id(5, 'there')\ndisplay_with_id(6, 'there', update=True)\n\n6\n\n\n\ndisplay_with_id(7, 'here')\ndisplay_with_id(8, 'here', update=True)\ndisplay_with_id(9, 'result', execute_result=True)\n\n8\n\n\n10\n\n\n\ndisplay_with_id(10, 'result', update=True)"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Inline Image.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Inline Image.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "Image('python.png')"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Interrupt.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Interrupt.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "print(\"done\")\n\ndone"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Factorials.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Factorials.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "for m in range(10):\n    i, j = j, i + j\n    print(j)\n\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Skip Exceptions with Cell Tags.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Skip Exceptions with Cell Tags.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "print('ok')\n\nok"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Check History in Memory.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Check History in Memory.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "ip = get_ipython()\nassert ip.history_manager.hist_file == ':memory:'"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Output.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Output.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "print(\"hi\")\nwith output1:\n    print(\"in output\")\n\nhi\n\n\n\nwith output1:\n    raise ValueError(\"trigger msg_type=error\")\n\n\nimport ipywidgets as widgets\noutput2 = widgets.Output()\noutput2\n\n\n\n\n\nprint(\"hi2\")\nwith output2:\n    print(\"in output2\")\n    clear_output(wait=True)\n\nhi2\n\n\n\nimport ipywidgets as widgets\noutput3 = widgets.Output()\noutput3\n\n\n\n\n\nprint(\"hi3\")\nwith output3:\n    print(\"hello\")\n    clear_output(wait=True)\n    print(\"world\")\n\nhi3\n\n\n\nimport ipywidgets as widgets\noutput4 = widgets.Output()\noutput4\n\n\n\n\n\nprint(\"hi4\")\nwith output4:\n    print(\"hello world\")\n    clear_output()\n\nhi4\n\n\n\nimport ipywidgets as widgets\noutput5 = widgets.Output()\noutput5\n\n\n\n\n\nprint(\"hi5\")\nwith output5:\n    display(\"hello world\") # this is not a stream but plain text\nclear_output()\n\n\nimport ipywidgets as widgets\noutput_outer = widgets.Output()\noutput_inner = widgets.Output()\noutput_inner\n\n\n\n\n\noutput_outer\n\n\n\n\n\nwith output_inner:\n    print('in inner')\n    with output_outer:\n        print('in outer')\n    print('also in inner')"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Clear Output.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Clear Output.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "for i in range(10):\n    clear_output()\n    print(i)\n\n9\n\n\n\nprint(\"Hello world\")\nclear_output()\n\n\nprint(\"Hello world\", end='')\nclear_output(wait=True)  # no output after this\n\nHello world\n\n\n\nprint(\"Hello\", end='')\nclear_output(wait=True)  # here we have new output after wait=True\nprint(\"world\", end='')\n\nworld\n\n\n\nhandle0 = display(\"Hello world\", display_id=\"id0\")\n\n'Hello world'\n\n\n\nhandle1 = display(\"Hello\", display_id=\"id1\")\n\n'world'\n\n\n\nhandle1.update('world')\n\n\nhandle2 = display(\"Hello world\", display_id=\"id2\")\nclear_output()  # clears all output, also with display_ids\n\n\nhandle3 = display(\"Hello world\", display_id=\"id3\")\nclear_output(wait=True)\n\n'Hello world'\n\n\n\nhandle4 = display(\"Hello\", display_id=\"id4\")\nclear_output(wait=True)\nprint('world', end='')\n\nworld\n\n\n\nhandle4.update('Hello world')  # it is cleared, so it should not show up in the above cell"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Parallel Execute A.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Parallel Execute A.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "This notebook uses a file system based “lock” to assert that two instances of the notebook kernel will run in parallel. Each instance writes to a file in a temporary directory, and then tries to read the other file from the temporary directory, so that running them in sequence will fail, but running them in parallel will succeed.\nTwo notebooks are launched, each which sets the this_notebook variable. One notebook is set to this_notebook = 'A' and the other this_notebook = 'B'.\n\nimport os\nimport os.path\nimport tempfile\nimport time\n\n\n# the variable this_notebook is injectected in a cell above by the test framework.\nthis_notebook = 'A'\nother_notebook = 'B'\ndirectory = os.environ['NBEXECUTE_TEST_PARALLEL_TMPDIR']\nwith open(os.path.join(directory, 'test_file_{}.txt'.format(this_notebook)), 'w') as f:\n    f.write('Hello from {}'.format(this_notebook))\n\n\nstart = time.time()\ntimeout = 5\nend = start + timeout\ntarget_file = os.path.join(directory, 'test_file_{}.txt'.format(other_notebook))\nwhile time.time() < end:\n    time.sleep(0.1)\n    if os.path.exists(target_file):\n        with open(target_file, 'r') as f:\n            text = f.read()\n        if text == 'Hello from {}'.format(other_notebook):\n            break\nelse:\n    assert False, \"Timed out – didn't get a message from {}\".format(other_notebook)"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Empty Cell.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Empty Cell.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "\"Code 1\"\n\n'Code 1'\n\n\n\n\"Code 2\"\n\n'Code 2'"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Skip Execution with Cell Tag.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Skip Execution with Cell Tag.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "print('ok')\n\nok"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Parallel Execute B.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Parallel Execute B.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "This notebook uses a file system based “lock” to assert that two instances of the notebook kernel will run in parallel. Each instance writes to a file in a temporary directory, and then tries to read the other file from the temporary directory, so that running them in sequence will fail, but running them in parallel will succeed.\nTwo notebooks are launched, each which sets the this_notebook variable. One notebook is set to this_notebook = 'A' and the other this_notebook = 'B'.\n\nimport os\nimport os.path\nimport tempfile\nimport time\n\n\n# the variable this_notebook is injectected in a cell above by the test framework.\nthis_notebook = 'B'\nother_notebook = 'A'\ndirectory = os.environ['NBEXECUTE_TEST_PARALLEL_TMPDIR']\nwith open(os.path.join(directory, 'test_file_{}.txt'.format(this_notebook)), 'w') as f:\n    f.write('Hello from {}'.format(this_notebook))\n\n\nstart = time.time()\ntimeout = 5\nend = start + timeout\ntarget_file = os.path.join(directory, 'test_file_{}.txt'.format(other_notebook))\nwhile time.time() < end:\n    time.sleep(0.1)\n    if os.path.exists(target_file):\n        with open(target_file, 'r') as f:\n            text = f.read()\n        if text == 'Hello from {}'.format(other_notebook):\n            break\nelse:\n    assert False, \"Timed out – didn't get a message from {}\".format(other_notebook)"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Unicode.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Unicode.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "print('☃')\n\n☃"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/HelloWorld.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/HelloWorld.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "print(\"Hello World\")\n\nHello World"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Sleep1s.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Sleep1s.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "t0 = datetime.datetime.utcnow()\ntime.sleep(1)\nt1 = datetime.datetime.utcnow()\n\n\ntime_format = '%Y-%m-%dT%H:%M:%S.%fZ'\nprint(t0.strftime(time_format), end='')\n\n\nprint(t1.strftime(time_format), end='')"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Error.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Error.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "0/0\n\nZeroDivisionError: division by zero"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Skip Exceptions.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Skip Exceptions.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "print('ok')\n\nok"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/pyzmq-25.0.0.dist-info/AUTHORS.html",
+    "href": "quarto_env/lib/python3.9/site-packages/pyzmq-25.0.0.dist-info/AUTHORS.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "This project was started and continues to be led by Brian E. Granger (ellisonbg AT gmail DOT com). Min Ragan-Kelley (benjaminrk AT gmail DOT com) is the primary developer of pyzmq at this time.\nThe following people have contributed to the project:\n\nAlexander Else (alexander DOT else AT team DOT telstra DOT com)\nAlexander Pyhalov (apyhalov AT gmail DOT com)\nAlexandr Emelin (frvzmb AT gmail DOT com)\nAmr Ali (amr AT ledgerx DOT com)\nAndre Caron (andre DOT l DOT caron AT gmail DOT com)\nAndrea Crotti (andrea DOT crotti DOT 0 AT gmail DOT com)\nAndrew Gwozdziewycz (git AT apgwoz DOT com)\nBaptiste Lepilleur (baptiste DOT lepilleur AT gmail DOT com)\nBrandyn A. White (bwhite AT dappervision DOT com)\nBrian E. Granger (ellisonbg AT gmail DOT com)\nBrian Hoffman (hoffman_brian AT bah DOT com)\nCarlos A. Rocha (carlos DOT rocha AT gmail DOT com)\nChris Laws (clawsicus AT gmail DOT com)\nChristian Wyglendowski (christian AT bu DOT mp)\nChristoph Gohlke (cgohlke AT uci DOT edu)\nCurtis (curtis AT tinbrain DOT net)\nCyril Holweck (cyril DOT holweck AT free DOT fr)\nDan Colish (dcolish AT gmail DOT com)\nDaniel Lundin (dln AT eintr DOT org)\nDaniel Truemper (truemped AT googlemail DOT com)\nDouglas Creager (douglas DOT creager AT redjack DOT com)\nEduardo Stalinho (eduardooc DOT 86 AT gmail DOT com)\nEren Güven (erenguven0 AT gmail DOT com)\nErick Tryzelaar (erick DOT tryzelaar AT gmail DOT com)\nErik Tollerud (erik DOT tollerud AT gmail DOT com)\nFELD Boris (lothiraldan AT gmail DOT com)\nFantix King (fantix DOT king AT gmail DOT com)\nFelipe Cruz (felipecruz AT loogica DOT net)\nFernando Perez (Fernando DOT Perez AT berkeley DOT edu)\nFrank Wiles (frank AT revsys DOT com)\nFélix-Antoine Fortin (felix DOT antoine DOT fortin AT gmail DOT com)\nGavrie Philipson (gavriep AT il DOT ibm DOT com)\nGodefroid Chapelle (gotcha AT bubblenet DOT be)\nGreg Banks (gbanks AT mybasis DOT com)\nGreg Ward (greg AT gerg DOT ca)\nGuido Goldstein (github AT a-nugget DOT de)\nIan Lee (IanLee1521 AT gmail DOT com)\nIonuț Arțăriși (ionut AT artarisi DOT eu)\nIvo Danihelka (ivo AT danihelka DOT net)\nIyed (iyed DOT bennour AT gmail DOT com)\nJim Garrison (jim AT garrison DOT cc)\nJohn Gallagher (johnkgallagher AT gmail DOT com)\nJulian Taylor (jtaylor DOT debian AT googlemail DOT com)\nJustin Bronder (jsbronder AT gmail DOT com)\nJustin Riley (justin DOT t DOT riley AT gmail DOT com)\nMarc Abramowitz (marc AT marc-abramowitz DOT com)\nMatthew Aburn (mattja6 AT gmail DOT com)\nMichel Pelletier (pelletier DOT michel AT gmail DOT com)\nMichel Zou (xantares09 AT hotmail DOT com)\nMin Ragan-Kelley (benjaminrk AT gmail DOT com)\nNell Hardcastle (nell AT dev-nell DOT com)\nNicholas Pilkington (nicholas DOT pilkington AT gmail DOT com)\nNicholas Piël (nicholas AT nichol DOT as)\nNick Pellegrino (npellegrino AT mozilla DOT com)\nNicolas Delaby (nicolas DOT delaby AT ezeep DOT com)\nOndrej Certik (ondrej AT certik DOT cz)\nPaul Colomiets (paul AT colomiets DOT name)\nPawel Jasinski (pawel DOT jasinski AT gmail DOT com)\nPhus Lu (phus DOT lu AT gmail DOT com)\nRobert Buchholz (rbu AT goodpoint DOT de)\nRobert Jordens (jordens AT gmail DOT com)\nRyan Cox (ryan DOT a DOT cox AT gmail DOT com)\nRyan Kelly (ryan AT rfk DOT id DOT au)\nScott Maxwell (scott AT codecobblers DOT com)\nScott Sadler (github AT mashi DOT org)\nSimon Knight (simon DOT knight AT gmail DOT com)\nStefan Friesel (sf AT cloudcontrol DOT de)\nStefan van der Walt (stefan AT sun DOT ac DOT za)\nStephen Diehl (stephen DOT m DOT diehl AT gmail DOT com)\nSylvain Corlay (scorlay AT bloomberg DOT net)\nThomas Kluyver (takowl AT gmail DOT com)\nThomas Spura (tomspur AT fedoraproject DOT org)\nTigger Bear (Tigger AT Tiggers-Mac-mini DOT local)\nTorsten Landschoff (torsten DOT landschoff AT dynamore DOT de)\nVadim Markovtsev (v DOT markovtsev AT samsung DOT com)\nYannick Hold (yannickhold AT gmail DOT com)\nZbigniew Jędrzejewski-Szmek (zbyszek AT in DOT waw DOT pl)\nhugo shi (hugoshi AT bleb2 DOT (none))\njdgleeson (jdgleeson AT mac DOT com)\nkyledj (kyle AT bucebuce DOT com)\nspez (steve AT hipmunk DOT com)\nstu (stuart DOT axon AT jpcreative DOT co DOT uk)\nxantares (xantares AT fujitsu-l64 DOT (none))\n\nas reported by:\ngit log --all --format='- %aN (%aE)' | sort -u | sed 's/@/ AT /1' | sed -e 's/\\.\\([^ ]\\)/ DOT \\1/g'\nwith some adjustments.\n\n\n\nBrandon Craig-Rhodes (brandon AT rhodesmill DOT org)\nEugene Chernyshov (chernyshov DOT eugene AT gmail DOT com)\nCraig Austin (craig DOT austin AT gmail DOT com)\n\n\n\n\n\nTravis Cline (travis DOT cline AT gmail DOT com)\nRyan Kelly (ryan AT rfk DOT id DOT au)\nZachary Voase (z AT zacharyvoase DOT com)"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/nbformat-5.7.3.dist-info/licenses/COPYING.html",
+    "href": "quarto_env/lib/python3.9/site-packages/nbformat-5.7.3.dist-info/licenses/COPYING.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "This project is licensed under the terms of the Modified BSD License (also known as New or Revised or 3-Clause BSD), as follows:\n\nCopyright (c) 2001-2015, IPython Development Team\nCopyright (c) 2015-, Jupyter Development Team\n\nAll rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the Jupyter Development Team nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n\nThe Jupyter Development Team is the set of all contributors to the Jupyter project. This includes all of the Jupyter subprojects.\nThe core team that coordinates development on GitHub can be found here: https://github.com/jupyter/.\n\n\n\nJupyter uses a shared copyright model. Each contributor maintains copyright over their contributions to Jupyter. But, it is important to note that these contributions are typically only changes to the repositories. Thus, the Jupyter source code, in its entirety is not the copyright of any single person or institution. Instead, it is the collective copyright of the entire Jupyter Development Team. If individual contributors want to maintain a record of what changes/contributions they have specific copyright on, they should indicate their copyright in the commit message of the change, when they commit the change to one of the Jupyter repositories.\nWith this in mind, the following banner should be used in any source code file to indicate the copyright and license terms:\n# Copyright (c) Jupyter Development Team.\n# Distributed under the terms of the Modified BSD License."
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/matplotlib/backends/web_backend/nbagg_uat.html",
+    "href": "quarto_env/lib/python3.9/site-packages/matplotlib/backends/web_backend/nbagg_uat.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "from imp import reload"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/matplotlib/backends/web_backend/nbagg_uat.html#uat-for-nbagg-backend.",
+    "href": "quarto_env/lib/python3.9/site-packages/matplotlib/backends/web_backend/nbagg_uat.html#uat-for-nbagg-backend.",
+    "title": "ITM237",
+    "section": "UAT for NbAgg backend.",
+    "text": "UAT for NbAgg backend.\nThe first line simply reloads matplotlib, uses the nbagg backend and then reloads the backend, just to ensure we have the latest modification to the backend code. Note: The underlying JavaScript will not be updated by this process, so a refresh of the browser after clearing the output and saving is necessary to clear everything fully.\n\nimport matplotlib\nreload(matplotlib)\n\nmatplotlib.use('nbagg')\n\nimport matplotlib.backends.backend_nbagg\nreload(matplotlib.backends.backend_nbagg)\n\n\nUAT 1 - Simple figure creation using pyplot\nShould produce a figure window which is interactive with the pan and zoom buttons. (Do not press the close button, but any others may be used).\n\nimport matplotlib.backends.backend_webagg_core\nreload(matplotlib.backends.backend_webagg_core)\n\nimport matplotlib.pyplot as plt\nplt.interactive(False)\n\nfig1 = plt.figure()\nplt.plot(range(10))\n\nplt.show()\n\n\n\nUAT 2 - Creation of another figure, without the need to do plt.figure.\nAs above, a new figure should be created.\n\nplt.plot([3, 2, 1])\nplt.show()\n\n\n\nUAT 3 - Connection info\nThe printout should show that there are two figures which have active CommSockets, and no figures pending show.\n\nprint(matplotlib.backends.backend_nbagg.connection_info())\n\n\n\nUAT 4 - Closing figures\nClosing a specific figure instance should turn the figure into a plain image - the UI should have been removed. In this case, scroll back to the first figure and assert this is the case.\n\nplt.close(fig1)\nplt.close('all')\n\n\n\nUAT 5 - No show without plt.show in non-interactive mode\nSimply doing a plt.plot should not show a new figure, nor indeed update an existing one (easily verified in UAT 6). The output should simply be a list of Line2D instances.\n\nplt.plot(range(10))\n\n\n\nUAT 6 - Connection information\nWe just created a new figure, but didn’t show it. Connection info should no longer have “Figure 1” (as we closed it in UAT 4) and should have figure 2 and 3, with Figure 3 without any connections. There should be 1 figure pending.\n\nprint(matplotlib.backends.backend_nbagg.connection_info())\n\n\n\nUAT 7 - Show of previously created figure\nWe should be able to show a figure we’ve previously created. The following should produce two figure windows.\n\nplt.show()\nplt.figure()\nplt.plot(range(5))\nplt.show()\n\n\n\nUAT 8 - Interactive mode\nIn interactive mode, creating a line should result in a figure being shown.\n\nplt.interactive(True)\nplt.figure()\nplt.plot([3, 2, 1])\n\nSubsequent lines should be added to the existing figure, rather than creating a new one.\n\nplt.plot(range(3))\n\nCalling connection_info in interactive mode should not show any pending figures.\n\nprint(matplotlib.backends.backend_nbagg.connection_info())\n\nDisable interactive mode again.\n\nplt.interactive(False)\n\n\n\nUAT 9 - Multiple shows\nUnlike most of the other matplotlib backends, we may want to see a figure multiple times (with or without synchronisation between the views, though the former is not yet implemented). Assert that plt.gcf().canvas.manager.reshow() results in another figure window which is synchronised upon pan & zoom.\n\nplt.gcf().canvas.manager.reshow()\n\n\n\nUAT 10 - Saving notebook\nSaving the notebook (with CTRL+S or File->Save) should result in the saved notebook having static versions of the figures embedded within. The image should be the last update from user interaction and interactive plotting. (check by converting with ipython nbconvert <notebook>)\n\n\nUAT 11 - Creation of a new figure on second show\nCreate a figure, show it, then create a new axes and show it. The result should be a new figure.\nBUG: Sometimes this doesn’t work - not sure why (@pelson).\n\nfig = plt.figure()\nplt.axes()\nplt.show()\n\nplt.plot([1, 2, 3])\nplt.show()\n\n\n\nUAT 12 - OO interface\nShould produce a new figure and plot it.\n\nfrom matplotlib.backends.backend_nbagg import new_figure_manager,show\n\nmanager = new_figure_manager(1000)\nfig = manager.canvas.figure\nax = fig.add_subplot(1,1,1)\nax.plot([1,2,3])\nfig.show()"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/matplotlib/backends/web_backend/nbagg_uat.html#uat-13---animation",
+    "href": "quarto_env/lib/python3.9/site-packages/matplotlib/backends/web_backend/nbagg_uat.html#uat-13---animation",
+    "title": "ITM237",
+    "section": "UAT 13 - Animation",
+    "text": "UAT 13 - Animation\nThe following should generate an animated line:\n\nimport matplotlib.animation as animation\nimport numpy as np\n\nfig, ax = plt.subplots()\n\nx = np.arange(0, 2*np.pi, 0.01)        # x-array\nline, = ax.plot(x, np.sin(x))\n\ndef animate(i):\n    line.set_ydata(np.sin(x+i/10.0))  # update the data\n    return line,\n\n#Init only required for blitting to give a clean slate.\ndef init():\n    line.set_ydata(np.ma.array(x, mask=True))\n    return line,\n\nani = animation.FuncAnimation(fig, animate, np.arange(1, 200), init_func=init,\n                              interval=100., blit=True)\nplt.show()\n\n\nUAT 14 - Keyboard shortcuts in IPython after close of figure\nAfter closing the previous figure (with the close button above the figure) the IPython keyboard shortcuts should still function.\n\n\nUAT 15 - Figure face colours\nThe nbagg honours all colours apart from that of the figure.patch. The two plots below should produce a figure with a red background. There should be no yellow figure.\n\nimport matplotlib\nmatplotlib.rcParams.update({'figure.facecolor': 'red',\n                            'savefig.facecolor': 'yellow'})\nplt.figure()\nplt.plot([3, 2, 1])\n\nplt.show()\n\n\n\nUAT 16 - Events\nPressing any keyboard key or mouse button (or scrolling) should cycle the line while the figure has focus. The figure should have focus by default when it is created and re-gain it by clicking on the canvas. Clicking anywhere outside of the figure should release focus, but moving the mouse out of the figure should not release focus.\n\nimport itertools\nfig, ax = plt.subplots()\nx = np.linspace(0,10,10000)\ny = np.sin(x)\nln, = ax.plot(x,y)\nevt = []\ncolors = iter(itertools.cycle(['r', 'g', 'b', 'k', 'c']))\ndef on_event(event):\n    if event.name.startswith('key'):\n        fig.suptitle('%s: %s' % (event.name, event.key))\n    elif event.name == 'scroll_event':\n        fig.suptitle('%s: %s' % (event.name, event.step))\n    else:\n        fig.suptitle('%s: %s' % (event.name, event.button))\n    evt.append(event)\n    ln.set_color(next(colors))\n    fig.canvas.draw()\n    fig.canvas.draw_idle()\n\nfig.canvas.mpl_connect('button_press_event', on_event)\nfig.canvas.mpl_connect('button_release_event', on_event)\nfig.canvas.mpl_connect('scroll_event', on_event)\nfig.canvas.mpl_connect('key_press_event', on_event)\nfig.canvas.mpl_connect('key_release_event', on_event)\n\nplt.show()\n\n\n\nUAT 17 - Timers\nSingle-shot timers follow a completely different code path in the nbagg backend than regular timers (such as those used in the animation example above.) The next set of tests ensures that both “regular” and “single-shot” timers work properly.\nThe following should show a simple clock that updates twice a second:\n\nimport time\n\nfig, ax = plt.subplots()\ntext = ax.text(0.5, 0.5, '', ha='center')\n\ndef update(text):\n    text.set(text=time.ctime())\n    text.axes.figure.canvas.draw()\n    \ntimer = fig.canvas.new_timer(500, [(update, [text], {})])\ntimer.start()\nplt.show()\n\nHowever, the following should only update once and then stop:\n\nfig, ax = plt.subplots()\ntext = ax.text(0.5, 0.5, '', ha='center') \ntimer = fig.canvas.new_timer(500, [(update, [text], {})])\n\ntimer.single_shot = True\ntimer.start()\n\nplt.show()\n\nAnd the next two examples should never show any visible text at all:\n\nfig, ax = plt.subplots()\ntext = ax.text(0.5, 0.5, '', ha='center')\ntimer = fig.canvas.new_timer(500, [(update, [text], {})])\n\ntimer.start()\ntimer.stop()\n\nplt.show()\n\n\nfig, ax = plt.subplots()\ntext = ax.text(0.5, 0.5, '', ha='center')\ntimer = fig.canvas.new_timer(500, [(update, [text], {})])\n\ntimer.single_shot = True\ntimer.start()\ntimer.stop()\n\nplt.show()\n\n\n\nUAT 18 - stopping figure when removed from DOM\nWhen the div that contains from the figure is removed from the DOM the figure should shut down it’s comm, and if the python-side figure has no more active comms, it should destroy the figure. Repeatedly running the cell below should always have the same figure number\n\nfig, ax = plt.subplots()\nax.plot(range(5))\nplt.show()\n\nRunning the cell below will re-show the figure. After this, re-running the cell above should result in a new figure number.\n\nfig.canvas.manager.reshow()\n\n\n\nUAT 19 - Blitting\nClicking on the figure should plot a green horizontal line moving up the axes.\n\nimport itertools\n\ncnt = itertools.count()\nbg = None\n\ndef onclick_handle(event):\n    \"\"\"Should draw elevating green line on each mouse click\"\"\"\n    global bg\n    if bg is None:\n        bg = ax.figure.canvas.copy_from_bbox(ax.bbox) \n    ax.figure.canvas.restore_region(bg)\n\n    cur_y = (next(cnt) % 10) * 0.1\n    ln.set_ydata([cur_y, cur_y])\n    ax.draw_artist(ln)\n    ax.figure.canvas.blit(ax.bbox)\n\nfig, ax = plt.subplots()\nax.plot([0, 1], [0, 1], 'r')\nln, = ax.plot([0, 1], [0, 0], 'g', animated=True)\nplt.show()\nax.figure.canvas.draw()\n\nax.figure.canvas.mpl_connect('button_press_event', onclick_handle)"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/soupsieve-2.4.dist-info/licenses/LICENSE.html",
+    "href": "quarto_env/lib/python3.9/site-packages/soupsieve-2.4.dist-info/licenses/LICENSE.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "Copyright (c) 2018 - 2022 Isaac Muse isaacmuse@gmail.com\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/QtPy-2.3.0.dist-info/AUTHORS.html",
+    "href": "quarto_env/lib/python3.9/site-packages/QtPy-2.3.0.dist-info/AUTHORS.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "pyqode.qt: Colin Duquesnoy (@ColinDuquesnoy)\nspyderlib.qt: Pierre Raybaut (@PierreRaybaut)\nqt-helpers: Thomas Robitaille (@astrofrog)\n\n\n\n\n\nDaniel Althviz (@dalthviz)\nCarlos Cordoba (@ccordoba12)\nC.A.M. Gerlach (@CAM-Gerlach)\nSpyder Development Team (Spyder-IDE)\n\n\n\n\n\nThe QtPy Contributors"
+  },
+  {
+    "objectID": "quarto_env/lib/python3.9/site-packages/traitlets-5.9.0.dist-info/licenses/COPYING.html",
+    "href": "quarto_env/lib/python3.9/site-packages/traitlets-5.9.0.dist-info/licenses/COPYING.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "Traitlets is adapted from enthought.traits, Copyright (c) Enthought, Inc., under the terms of the Modified BSD License.\nThis project is licensed under the terms of the Modified BSD License (also known as New or Revised or 3-Clause BSD), as follows:\n\nCopyright (c) 2001-, IPython Development Team\n\nAll rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the IPython Development Team nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n\nThe IPython Development Team is the set of all contributors to the IPython project. This includes all of the IPython subprojects.\nThe core team that coordinates development on GitHub can be found here: https://github.com/jupyter/.\n\n\n\nIPython uses a shared copyright model. Each contributor maintains copyright over their contributions to IPython. But, it is important to note that these contributions are typically only changes to the repositories. Thus, the IPython source code, in its entirety is not the copyright of any single person or institution. Instead, it is the collective copyright of the entire IPython Development Team. If individual contributors want to maintain a record of what changes/contributions they have specific copyright on, they should indicate their copyright in the commit message of the change, when they commit the change to one of the IPython repositories.\nWith this in mind, the following banner should be used in any source code file to indicate the copyright and license terms:\n# Copyright (c) IPython Development Team.\n# Distributed under the terms of the Modified BSD License."
+  },
+  {
+    "objectID": "publish.html",
+    "href": "publish.html",
+    "title": "Publish",
+    "section": "",
+    "text": "Adapted from Source\n\n\nEnsure that your installation of Python has the virtualenv package installed by running:\npip install virtualenv\n\n\n\nIt is recommended that you use one virtual environment per project, similar to how packrat is used to manage R packages within a project. Navigate into your RStudio project directory by using the following command:\ncd <project-dir>\nCreate a new virtual environment in a folder called my_env within your project directory using the following command:\nvirtualenv quarto_env\n\n\n\n\nYou can activate the virtualenv in your project using the following command in a terminal:\nsource my_env/bin/activate\nYou can verify that you have activated the correct version of Python using the following command in a terminal:\nwhich python\n\n\n\nYou can install Python packages such as numpy, pandas, matplotlib, and other packages in your Python virtualenv by using pip install using the following command in a terminal:\npip install numpy pandas matplotlib\npip install jupyter\n\n\n\nInstall and configure reticulate to use your Python version\ninstall.packages(\"reticulate\")\nTo configure reticulate to point to the Python executable in your virtualenv, create a file in your project directory called .Renviron with the following contents:\nRETICULATE_PYTHON=quarto_env/bin/python\nYou’ll need to restart your R session for the setting to take effect. You can verify that reticulate is configured for the correct version of Python using the following command in your R console:\nreticulate::py_config()\n\n\n\nCreate a markdown file with a title and source. You can then render your quarto markdown file to publish file.\n\ntitle: \"Lecture 2\"\njupyter: python3"
+  },
+  {
+    "objectID": "assignments/assignment_1.html",
+    "href": "assignments/assignment_1.html",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "Q1. Write a Python program that prints(displays) your name, address, and telephone number.\nQ2. Evaluate the following code at shell prompt: Then assign name an appropirate value, and evaluate the statement again.\nprint(\"Your name is\", name)\nQ3. Open and IDLE window, and enter the program from Figure 1.7 that computes the area of a rectangle. Load the program into the shell by pressing the F5 key, and correct any errors that occur. Test the program with different inputs by running at least three times.\n```{python}\n#| code-fold: show\nwidth = int(input(\"Enter the width: \"))\nheight = int(input(\"Enter the height: \"))\narea = width * height\nprint(\"The area is\", area, \"square units.\")\n\n```\n\nFinal submission"
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "resources/students/student_setup.html",
+    "href": "resources/students/student_setup.html",
+    "title": "Students Initial Setup",
+    "section": "",
+    "text": "You may have noticed that there are no formal prerequisites for this course. This was a conscious decision, as I wanted to keep the door open to as many excited students with different backgrounds as possible. But I want to make sure that interested students understand expectations and are prepared to put in the time to fill any potential gaps via self study, ideally before the quarter begins."
+  },
+  {
+    "objectID": "resources/students/installation.html",
+    "href": "resources/students/installation.html",
+    "title": "Student Requirements",
+    "section": "",
+    "text": "A popular and friendly way to use Python is to install the Anaconda Distribution that not only ships Python itself but also comes pre-packaged with a lot of third-party libraries. Download Anaconda with Python 3.7 and install it.\nAfter installation, you will find an entry “Anaconda Navigator” in your start menu. Click on it. A window opens giving you several options to start various applications. We will mostly be working with Jupyter Notebook. Click on “Launch”.\nDownload the Jupyter Notebook from Modules/Day 1 and open it. See the tips page for details on running Jupyter Notebooks. Run some of the cells and see what they do."
+  },
+  {
+    "objectID": "resources/students/installation.html#laptop-usage",
+    "href": "resources/students/installation.html#laptop-usage",
+    "title": "Student Requirements",
+    "section": "Laptop Usage",
+    "text": "Laptop Usage\nPlease plan to bring a laptop to class. If you have installed Anaconda as mentioned in the Setup section above, you will have a head start on the first day and will be able to follow along in class."
+  },
+  {
+    "objectID": "resources/students/installation.html#textbook",
+    "href": "resources/students/installation.html#textbook",
+    "title": "Student Requirements",
+    "section": "Textbook",
+    "text": "Textbook\nWe will be using Fundamentals of Python Programming by Lambert (2nd edition).\nOther textbook resources include Think Python, by Allen B. Downey, second edition, O’Reilly, Sebastopol, California. The second edition talks about Python 3. We will be using Python 3.This is an excellent book. If you plan to learn Python, it is worth having, even if you decide that this class is not for you. I prefer a paper copy, but you may prefer an electronic copy. You can find a PDF [here] (http://greenteapress.com/wp/think-python-2e/)\n###When to read the book? I find it best to read each chapter two times: once before class, and to read it again after class. The book is short, and each chapter will make more sense the second time you read it.\nYou will find it useful to keep a list of things you don’t understand, and try to work through that list. You can use markers, highlighters, a to-do list, or write on the back of your hand. Reviewing a list, and updating your understanding of each point, is a good way for you to take charge of your learning."
+  },
+  {
+    "objectID": "resources/students/student_resources.html",
+    "href": "resources/students/student_resources.html",
+    "title": "Student Resources",
+    "section": "",
+    "text": "A popular and friendly way to use Python is to install the Anaconda Distribution that not only ships Python itself but also comes pre-packaged with a lot of third-party libraries. Download Anaconda with Python 3.7 and install it.\nAfter installation, you will find an entry “Anaconda Navigator” in your start menu. Click on it. A window opens giving you several options to start various applications. We will mostly be working with Jupyter Notebook. Click on “Launch”.\nDownload the Jupyter Notebook from Modules/Day 1 and open it. See the tips page for details on running Jupyter Notebooks. Run some of the cells and see what they do."
+  },
+  {
+    "objectID": "resources/students/student_resources.html#laptop-usage",
+    "href": "resources/students/student_resources.html#laptop-usage",
+    "title": "Student Resources",
+    "section": "Laptop Usage",
+    "text": "Laptop Usage\nPlease plan to bring a laptop to class. If you have installed Anaconda as mentioned in the Setup section above, you will have a head start on the first day and will be able to follow along in class."
+  },
+  {
+    "objectID": "resources/students/student_resources.html#textbook",
+    "href": "resources/students/student_resources.html#textbook",
+    "title": "Student Resources",
+    "section": "Textbook",
+    "text": "Textbook\nWe will be using Fundamentals of Python Programming by Lambert (2nd edition).\nOther textbook resources include Think Python, by Allen B. Downey, second edition, O’Reilly, Sebastopol, California. The second edition talks about Python 3. We will be using Python 3.This is an excellent book. If you plan to learn Python, it is worth having, even if you decide that this class is not for you. I prefer a paper copy, but you may prefer an electronic copy from the link above.\n\nWhen to read the book?\nI find it best to read each chapter two times: once before class, and to read it again after class. The book is short, and each chapter will make more sense the second time you read it.\nYou will find it useful to keep a list of things you don’t understand, and try to work through that list. You can use markers, highlighters, a to-do list, or write on the back of your hand. Reviewing a list, and updating your understanding of each point, is a good way for you to take charge of your learning."
+  },
+  {
+    "objectID": "assignments/final_project.html",
+    "href": "assignments/final_project.html",
+    "title": "Final Project",
+    "section": "",
+    "text": "The purpose of this project is to find a relevant research problem, collect data, and then to use the tools and knowledge you have gained throughout the course to address the research question. The design and implementation of your project is entirely up to you, albeit subject to this basic requirements:\nCreating an entire project may seem daunting. Here are some questions that you should think about as you start:"
+  },
+  {
+    "objectID": "assignments/final_project.html#python-code-and-markdown",
+    "href": "assignments/final_project.html#python-code-and-markdown",
+    "title": "Final Project",
+    "section": "Python Code and Markdown",
+    "text": "Python Code and Markdown\nA well documented Jupyter notebook with Markdown to download, read, explore, and clean data if needed. All processes should be automated, and no hand edit on raw data. The code should be documented to visualize data and to run any statistical models as needed. The instructor should be able to reproduce your workflow and regenerate your final report."
+  },
+  {
+    "objectID": "assignments/final_project.html#documentation",
+    "href": "assignments/final_project.html#documentation",
+    "title": "Final Project",
+    "section": "Documentation",
+    "text": "Documentation\nCreate a readme.md text file within your project folder. This file should contain your Project title, and a description of your projected. You can juse Markdown syntax within JupyterLab notebook to create this. Here is a summary of Markdown syntaxLinks to an external site.. Final project will be graded for documentation, reproducibility, and clarity and presentation of final output. Report should communicate the interpretations of your analyses well to your audience. Additionally, describe any limitations or issues that you encountered that may influence your analyses/conclusion."
+  },
+  {
+    "objectID": "assignments/final_project.html#final-presentation",
+    "href": "assignments/final_project.html#final-presentation",
+    "title": "Final Project",
+    "section": "Final Presentation",
+    "text": "Final Presentation\nYou can create a short video (< 5 minutes in length) in which you present your project to the world, as with slides, screenshots, voiceover, and/or live action. Here is link on how to record your screenLinks to an external site.. Alternatively, you can also choose to present in class."
+  },
+  {
+    "objectID": "notebooks/code_1.html",
+    "href": "notebooks/code_1.html",
+    "title": "ITM237",
+    "section": "",
+    "text": "ITM 237\nPrajjwal Panday\n\n\nA general-purpose programming language by Guido van Rossum  Intuitive and minimal coding  Interpreted not compiled  Dynamically typed, no type declarations, data type is tracked at runtime  Automatic memory management  Spacing defines blocks of code such as control structures and blocks \n\n\n\n\nAdvantages\nEase of programming\nMinimal time to develop and maintain codes\nModular and object-oriented\nLarge standard and user-contributed libraries\nLarge user community\n\n\n\n\nPython is an interpreted language and you can run simple Python expressions and statements in the interactive programming environment called the shell. In Jupyter Notebook, we will run these in a ‘cell’.\n\n\n\nWe can also force the output of a value by using the print function. The simples for would look like this.\nprint(<expression>)\nYou can also write a print function that includes two or more expressions separated by commas.\nprint(<expression>, ..., <expression>)\n\n#statements are interpreted one by one\nprint (\"Hello World\")\nprint (\"something else\")\nprint (\"2+2\")\n\n\n## There is a help system\n\n\n## Type an expression in this code block and run it\nbin(150)\n\n\nprint (\"Hello World\")\n\n\nname = \"Prajjwal Panday\"\n\"Hello there, \" + name\n\n\nround(18.96)\n\n\n#Here are some escape sequences\na = \"Hello\\aFUGU\\aSHRIMP\"\nb = 'Hello\\tFUGU\\nSHRIMP' #single quotes work as well \nprint (a,b)\n\n#why do you think the output is like this?\n#try taking the escape sequences to find out\n\n\n\n\nYou can add comment to your python scripts with the # symbol. These comments are not run as Python code, so they will not influence your result.\n\n\n\nPython supports all of the mathematical operations you would expect. For additional resources, please see https://en.wikibooks.org/wiki/Python_Programming/Basic_Math\n\nmass_kg = int(input(\"What is your mass in kilograms?\" ))\nmass_stone = mass_kg * 2.2 / 14\nprint(\"You weigh\", mass_stone, \"stone.\")\n\n\nprint (round(3.14159265, 2))\n\n\n# Examples of Arithmetic Operator\na = 9\nb = 4\n  \n# Addition of numbers\nadd = a + b\n  \n# Subtraction of numbers\nsub = a - b\n  \n# Multiplication of number\nmul = a * b\n  \n# Division(float) of number\ndiv1 = a / b\n  \n# Division(floor) of number\ndiv2 = a // b\n  \n# Modulo of both number - outputs remainder\nmod = a % b\n  \n# Power\np = a ** b\n  \n# print results\nprint('a + b = ', add)\nprint('a - b = ', sub)\nprint('a * b = ', mul)\nprint('a / b = ',div1)\nprint('a // b = ', div2)\nprint('a % b = ', mod)\nprint('a ** b = ', p)\n\n\n\n\nThe input function displays a prompt for the input. For example, the prompt can be\nname = input(\"Enter your name.  :\")\nThe text in parentheses (“Enter your name. :”) is an argument for the input function that tells it what to do for the promt. The string returned by the function in our example is saved by assigning it to the variable name. A variable is just a name for a value and the value can be called up through the variable name. To create a variable, use =. In Python, = means assignment, not equality. If the user enters the name “Prajjwal Panday”, the value of the variable name can be viewed as follows:\nprint(name)\n\nname = input(\"Enter your name.  :\")\nprint(name)\n\n\nfirst=float(input(\"Tell me the first number: \"))\nsecond=float(input(\"Tell me the second number: \"))\nprint(\"The sum of the two numbers is\", first+second)\nprint(\"The product of the two numbers is\", first*second)\n\n\n\"The raven said 'nevermore,' that's his favorite thing to say\"\n\n\n\"Hello! Here I'm using a single quote.\"\n\n\n# Newline character \\n also knows as escape sequence\n\"This is a very long sentence which extends all the way to next line. There is not break. When you evaluate a string in Python without the print function, \\n is embedded in the result\"\n\n\nprint(\"This is a very long sentence which extends all the way to next line. There is no break. When you evaluate a string in Python without the print function, a space is embedded in the result\")\n\n\nname = \"Prajjwal Panday,  \"\naddress = \"Worcester, MA\"\nprint(name + address)\n\n\n\n\nPlease finish these five questions.\nQ1. Print the sum of 7 and 10 and add the comment ‘Addition’\nQ2. Create variables for each and solve the following using operators. Print out the final result as a separate variable.\n\n6 + 4\n((27 * 2) + 46) ** 0.5\n\nQ3. Using your own height (in meters) and weight (kilograms), please compute your individual BMIs. Create a variable called BMI to store the output. BMI is calculated as weight / (height)^2 where weight is in kilograms and height is in meters.\nQ4. Print your name and address as strings in different variables and print them together using print() function\nQ5. Suppose you have $100, which you can invest with a 10% return each year. After one year, it’s 100 x 1.1 dollars, and after two years it’s 100 X 1.1. X 1.1. Add code to calculate how much money you end up with after 10 years, and print the result."
+  }
+]

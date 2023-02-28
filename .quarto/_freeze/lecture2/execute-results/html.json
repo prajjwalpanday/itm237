@@ -1,0 +1,11 @@
+{
+  "hash": "d962c25b2b33380d63038a0b0f31904c",
+  "result": {
+    "markdown": "---\ntitle: Lecture 2\n---\n\n```{r}\n#| warning: false\n\nlibrary(ggplot2)\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\", se = FALSE)\n```\n\n```{r}\nsummary(airquality)\n```\n\n::: {.cell execution_count=1}\n``` {.python .cell-code}\n# Python program to swap two variables\n\nx = 5\ny = 10\n\n# To take inputs from the user\n#x = input('Enter value of x: ')\n#y = input('Enter value of y: ')\n\n# create a temporary variable and swap the values\ntemp = x\nx = y\ny = temp\n\nprint('The value of x after swapping: {}'.format(x))\nprint('The value of y after swapping: {}'.format(y))\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nThe value of x after swapping: 10\nThe value of y after swapping: 5\n```\n:::\n:::\n\n\n::: {.cell execution_count=2}\n``` {.python .cell-code code-fold=\"show\"}\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![A line plot on a polar axis](lecture2_files/figure-html/fig-polar-output-1.png){#fig-polar width=450 height=439}\n:::\n:::\n\n\n",
+    "supporting": [
+      "lecture2_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

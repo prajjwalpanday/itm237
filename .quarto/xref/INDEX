@@ -1,0 +1,164 @@
+{
+  "index.qmd": {
+    "index.html": "5ac7fa2f"
+  },
+  "about.qmd": {
+    "about.html": "0045fde8"
+  },
+  "index_1.qmd": {
+    "index_1.html": "cbbeaaf1"
+  },
+  "lecture1.qmd": {
+    "lecture1.html": "4e58ed3c"
+  },
+  "lecture3.qmd": {
+    "lecture3.html": "eb00d243"
+  },
+  "lecture2.qmd": {
+    "lecture2.html": "57a9f929"
+  },
+  "lecture5.qmd": {
+    "lecture5.html": "0b0bcbaf"
+  },
+  "lecture4.qmd": {
+    "lecture4.html": "24791c18"
+  },
+  "instructor.qmd": {
+    "instructor.html": "2ba926a2"
+  },
+  "lecture2.ipynb": {
+    "lecture2.html": "9161df4f"
+  },
+  "quarto_env/lib/python3.9/site-packages/ipykernel-6.21.2.dist-info/licenses/COPYING.md": {
+    "COPYING.html": "49c249fc"
+  },
+  "quarto_env/lib/python3.9/site-packages/jupyter_core-5.2.0.dist-info/licenses/COPYING.md": {
+    "COPYING.html": "ddb05ac1"
+  },
+  "quarto_env/lib/python3.9/site-packages/jupyter_events-0.6.3.dist-info/licenses/COPYING.md": {
+    "COPYING.html": "221f1c4a"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclassic/bundler/tests/resources/empty.ipynb": {
+    "empty.html": "ee8025d9"
+  },
+  "quarto_env/lib/python3.9/site-packages/idna-3.4.dist-info/LICENSE.md": {
+    "LICENSE.html": "66b7d2f8"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/UnicodePy3.ipynb": {
+    "UnicodePy3.html": "1e7e59de"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/JupyterWidgets.ipynb": {
+    "JupyterWidgets.html": "c4814d0c"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Other Comms.ipynb": {
+    "Other Comms.html": "7fab185a"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/SVG.ipynb": {
+    "SVG.html": "832e7879"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Disable Stdin.ipynb": {
+    "Disable Stdin.html": "96fdea5b"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Autokill.ipynb": {
+    "Autokill.html": "f8f1471f"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/update-display-id.ipynb": {
+    "update-display-id.html": "d5c259ed"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Inline Image.ipynb": {
+    "Inline Image.html": "e7a1ca41"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Interrupt.ipynb": {
+    "Interrupt.html": "26cd5634"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Factorials.ipynb": {
+    "Factorials.html": "77bdf103"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Skip Exceptions with Cell Tags.ipynb": {
+    "Skip Exceptions with Cell Tags.html": "7ea76c8f"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Check History in Memory.ipynb": {
+    "Check History in Memory.html": "4eedf3ed"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Output.ipynb": {
+    "Output.html": "9c33881d"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Clear Output.ipynb": {
+    "Clear Output.html": "12251973"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Parallel Execute A.ipynb": {
+    "Parallel Execute A.html": "77b684e1"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Empty Cell.ipynb": {
+    "Empty Cell.html": "4c330c60"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Skip Execution with Cell Tag.ipynb": {
+    "Skip Execution with Cell Tag.html": "15fe5f17"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Parallel Execute B.ipynb": {
+    "Parallel Execute B.html": "73cebc79"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Unicode.ipynb": {
+    "Unicode.html": "4e6a1605"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/HelloWorld.ipynb": {
+    "HelloWorld.html": "921d5eb9"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Sleep1s.ipynb": {
+    "Sleep1s.html": "452c583b"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Error.ipynb": {
+    "Error.html": "55aeede0"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbclient/tests/files/Skip Exceptions.ipynb": {
+    "Skip Exceptions.html": "c42ed2ae"
+  },
+  "quarto_env/lib/python3.9/site-packages/pyzmq-25.0.0.dist-info/AUTHORS.md": {
+    "AUTHORS.html": "d2862b38"
+  },
+  "quarto_env/lib/python3.9/site-packages/nbformat-5.7.3.dist-info/licenses/COPYING.md": {
+    "COPYING.html": "7149c4cb"
+  },
+  "quarto_env/lib/python3.9/site-packages/matplotlib/backends/web_backend/nbagg_uat.ipynb": {
+    "nbagg_uat.html": "b303f2e4"
+  },
+  "quarto_env/lib/python3.9/site-packages/soupsieve-2.4.dist-info/licenses/LICENSE.md": {
+    "LICENSE.html": "b5b1ff67"
+  },
+  "quarto_env/lib/python3.9/site-packages/notebook/bundler/tests/resources/empty.ipynb": {
+    "empty.html": "4f419d38"
+  },
+  "quarto_env/lib/python3.9/site-packages/QtPy-2.3.0.dist-info/AUTHORS.md": {
+    "AUTHORS.html": "5489d7ce"
+  },
+  "quarto_env/lib/python3.9/site-packages/traitlets-5.9.0.dist-info/licenses/COPYING.md": {
+    "COPYING.html": "00cee70a"
+  },
+  "publish.qmd": {
+    "publish.html": "8ff97223"
+  },
+  "publish.ipynb": {
+    "publish.html": "4d028dee"
+  },
+  "assignments/assignment_1.qmd": {
+    "assignment_1.html": "c87d5523"
+  },
+  "syllabus.qmd": {
+    "syllabus.html": "447ed342"
+  },
+  "resources/students/student_setup.qmd": {
+    "student_setup.html": "399c93f2"
+  },
+  "resources/students/installation.qmd": {
+    "installation.html": "d444b2e8"
+  },
+  "resources/students/student_resources.qmd": {
+    "student_resources.html": "6257ec2d"
+  },
+  "assignments/final_project.qmd": {
+    "final_project.html": "dc93f7ec"
+  },
+  "notebooks/code_1.ipynb": {
+    "code_1.html": "eb51dd29"
+  }
+}

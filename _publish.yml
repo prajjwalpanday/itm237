@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 1e917483-2e6e-46d5-8ae4-655112f353a2
+      url: 'https://quartopub.com/sites/prajjwalpanday/test-site'

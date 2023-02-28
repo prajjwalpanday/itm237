@@ -1,0 +1,65 @@
+---
+title: "Publishing Python from Rstudio using Quarto"
+---
+
+Adapted from [Source](https://support.posit.co/hc/en-us/articles/360023654474-Installing-and-Configuring-Python-with-RStudio)
+
+#### Step 1. Install Python and Virtualenv
+Ensure that your installation of Python has the virtualenv package installed by running: 
+```
+pip install virtualenv
+```
+
+#### Step 2. Create a Python environment in your project
+It is recommended that you use one virtual environment per project, similar to how packrat is used to manage R packages within a project.
+Navigate into your RStudio project directory by using the following command:
+```
+cd <project-dir>
+```
+Create a new virtual environment in a folder called my_env within your project directory using the following command:
+```
+virtualenv quarto_env
+
+```
+
+#### Step 3. Activate your Python environment
+You can activate the virtualenv in your project using the following command in a terminal:
+```
+source my_env/bin/activate
+```
+You can verify that you have activated the correct version of Python using the following command in a terminal:
+```
+which python
+```
+#### Step 4. Install Python packages in your environment
+You can install Python packages such as numpy, pandas, matplotlib, and other packages in your Python virtualenv by using pip install using the following command in a terminal:
+```
+pip install numpy pandas matplotlib
+```
+```
+pip install jupyter
+```
+#### Step 5. Install and configure reticulate to use your Python version
+Install and configure reticulate to use your Python version
+```
+install.packages("reticulate")
+```
+To configure reticulate to point to the Python executable in your virtualenv, create a file in your project directory called .Renviron with the following contents:
+```
+RETICULATE_PYTHON=quarto_env/bin/python
+```
+You'll need to restart your R session for the setting to take effect. You can verify that reticulate is configured for the correct version of Python using the following command in your R console:
+```
+reticulate::py_config()
+```
+
+#### Step 6. Publish a project to RStudio Connect
+Create a markdown file with a title and source. You can then render your quarto markdown file to publish file.
+
+```
+---
+title: "Lecture 2"
+jupyter: python3
+
+---
+```

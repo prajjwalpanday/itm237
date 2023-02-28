@@ -1,0 +1,35 @@
+---
+title: "Final Project"
+---
+
+The purpose of this project is to find a relevant research problem, collect data, and then to use the tools and knowledge you have gained throughout the course to address the research question. The design and implementation of your project is entirely up to you, albeit subject to this basic requirements:
+
+- Your project must be implemented in Python.
+- Your project must incorporate the use of functions: one main function and two other additional functions.
+- Feel free to implement additional functions as you see fit beyond the minimum requirement.
+- Implementing your final project should entail more time and effort than is required by each of the course's projects completed.
+- You are welcome, but not required to, collaborate with one or two classmates on your project. But a two- or three-person should entail twice or thrice the time and effort required by a one-person project.
+- You are also encouraged to learn new skills and use additional Python packages as necessary to accomplish your project goal. 
+- Any external sources or data used in the project, make sure you cite them and file under References.
+
+Creating an entire project may seem daunting. Here are some questions that you should think about as you start:
+
+- What will your software do? What features will it have? How will it be executed?
+- What new skills will you need to acquire? What topics will you need to research?
+- If working with one or two classmates, who will do what?
+- In the world of software, most everything takes longer to implement than you expect. And so it’s not uncommon to accomplish less in a fixed amount of time than you hope. What might you consider to be a good outcome for your project? A better outcome? The best outcome?
+- Consider making goal milestones to keep you on track.
+
+## Python Code and Markdown
+
+A well documented Jupyter notebook with Markdown to download, read, explore, and clean data if needed. All processes should be automated, and no hand edit on raw data. The code should be documented to visualize data and to run any statistical models as needed. The instructor should be able to reproduce your workflow and regenerate your final report.
+
+ 
+## Documentation
+
+Create a readme.md text file within your project folder. This file should contain your Project title, and a description of your projected. You can juse Markdown syntax within JupyterLab notebook to create this. Here is a summary of Markdown syntaxLinks to an external site.. Final project will be graded for documentation, reproducibility, and clarity and presentation of final output. Report should communicate the interpretations of your analyses well to your audience. Additionally, describe any limitations or issues that you encountered that may influence your analyses/conclusion.
+
+
+## Final Presentation
+
+You can create a short video (< 5 minutes in length) in which you present your project to the world, as with slides, screenshots, voiceover, and/or live action. Here is link on how to record your screenLinks to an external site.. Alternatively, you can also choose to present in class.

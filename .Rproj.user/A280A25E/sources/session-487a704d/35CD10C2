@@ -3,7 +3,7 @@
     "path": "~/Library/CloudStorage/OneDrive-NicholsCollege/ITM237/itm237-site/rgit.qmd",
     "project_path": "rgit.qmd",
     "type": "quarto_markdown",
-    "hash": "2430250192",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1677627291704.0,
@@ -18,7 +18,8 @@
         "cursorPosition": "1,57",
         "scrollLine": "0",
         "rmdVisualModeLocation": "2:0",
-        "rmdVisualCollapsedChunks": ""
+        "rmdVisualCollapsedChunks": "",
+        "docOutlineSize": "189"
     },
     "folds": "",
     "lastKnownWriteTime": 1677627326,

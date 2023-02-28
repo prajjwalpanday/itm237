@@ -51,6 +51,7 @@ website:
           - href: lecture4.qmd 
           - href: lecture5.qmd 
           - href: publish.qmd
+          - href: rgit.qmd
       - section: "**Assignments**"
         contents:
           - href: assignments/assignment_1.qmd

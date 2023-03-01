@@ -269,10 +269,18 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>Adapted from <a href="https://support.posit.co/hc/en-us/articles/360023654474-Installing-and-Configuring-Python-with-RStudio">Source</a></p>
-<section id="step-1.-install-python-and-virtualenv" class="level4">
-<h4 class="anchored" data-anchor-id="step-1.-install-python-and-virtualenv">Step 1. Install Python and Virtualenv</h4>
-<p>Ensure that your installation of Python has the virtualenv package installed by running:</p>
-<pre><code>pip install virtualenv</code></pre>
+<section id="step-1.-using-virtual-environments-with-quarto-and-github" class="level4">
+<h4 class="anchored" data-anchor-id="step-1.-using-virtual-environments-with-quarto-and-github">Step 1. Using Virtual Environments with Quarto and Github</h4>
+<p>For Git users, in order to track project dependencies, continue below:</p>
+<ul>
+<li>While in the virtual environment, start by installing a package. For this example we will use pandas. Run pip install pandas</li>
+<li>Run deactivate to stop the virtual environment</li>
+<li>Initialize the repo by running git init</li>
+<li>Run echo ‘env’ &gt; .gitignore to include the env folder in the .gitignore file so the virtual environment is ignored in source control</li>
+<li>Run pip freeze &gt; requirements.txt to place the dependencies in a text file to be committed. Freezing reads all the installed dependencies and then produces a text file with the name of the dependency and the installed version number.</li>
+<li>Run git add requirements.txt to check the file into source control.</li>
+<li>Commit the files and push to a repo. pip install virtualenv</li>
+</ul>
 </section>
 <section id="step-2.-create-a-python-environment-in-your-project" class="level4">
 <h4 class="anchored" data-anchor-id="step-2.-create-a-python-environment-in-your-project">Step 2. Create a Python environment in your project</h4>

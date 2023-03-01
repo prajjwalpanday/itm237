@@ -4,10 +4,17 @@ title: "Using Github with Quarto and Virtual Environments"
 
 Adapted from [Source](https://support.posit.co/hc/en-us/articles/360023654474-Installing-and-Configuring-Python-with-RStudio)
 
-#### Step 1. Install Python and Virtualenv
+#### Step 1. Using Virtual Environments with Quarto and Github
 
-Ensure that your installation of Python has the virtualenv package installed by running:
+For Git users, in order to track project dependencies, continue below:
 
+- While in the virtual environment, start by installing a package. For this example we will use pandas. Run pip install pandas
+- Run deactivate to stop the virtual environment
+- Initialize the repo by running git init
+- Run echo ‘env' > .gitignore to include the env folder in the .gitignore file so the virtual environment is ignored in source control
+- Run pip freeze > requirements.txt to place the dependencies in a text file to be committed. Freezing reads all the installed dependencies and then produces a text file with the name of the dependency and the installed version number.
+- Run git add requirements.txt to check the file into source control.
+- Commit the files and push to a repo.
     pip install virtualenv
 
 #### Step 2. Create a Python environment in your project

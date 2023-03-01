@@ -284,8 +284,15 @@ ul.task-list li input[type="checkbox"] {
 <li>You could even get out ahead of this and store the PAT explicitly right now. In R, call gitcreds::gitcreds_set() to get a prompt where you can paste your PAT.</li>
 </ul>
 </section>
-<section id="step-1.-using-virtual-environments-with-quarto-and-github" class="level4">
-<h4 class="anchored" data-anchor-id="step-1.-using-virtual-environments-with-quarto-and-github">Step 1. Using Virtual Environments with Quarto and Github</h4>
+<section id="step-3.-create-a-new-empty-repository-in-github" class="level4">
+<h4 class="anchored" data-anchor-id="step-3.-create-a-new-empty-repository-in-github">Step 3. Create a new, empty repository in Github</h4>
+<ul>
+<li>Create a new repository in Github, for example “itm237”</li>
+<li>Go to Settings –&gt; Pages and set Branch to “main” and select folder to “Docs”</li>
+</ul>
+</section>
+<section id="step-4.-using-virtual-environments-with-quarto-and-github" class="level4">
+<h4 class="anchored" data-anchor-id="step-4.-using-virtual-environments-with-quarto-and-github">Step 4. Using Virtual Environments with Quarto and Github</h4>
 <p>For Git users, in order to track project dependencies, continue below:</p>
 <ul>
 <li>While in the virtual environment, start by installing a package. For this example we will use pandas. Run pip install pandas</li>
@@ -297,44 +304,26 @@ ul.task-list li input[type="checkbox"] {
 <li>Commit the files and push to a repo. pip install virtualenv</li>
 </ul>
 </section>
-<section id="step-2.-create-a-python-environment-in-your-project" class="level4">
-<h4 class="anchored" data-anchor-id="step-2.-create-a-python-environment-in-your-project">Step 2. Create a Python environment in your project</h4>
-<p>It is recommended that you use one virtual environment per project, similar to how packrat is used to manage R packages within a project. Navigate into your RStudio project directory by using the following command:</p>
-<pre><code>cd &lt;project-dir&gt;</code></pre>
-<p>Create a new virtual environment in a folder called my_env within your project directory using the following command:</p>
-<pre><code>virtualenv quarto_env</code></pre>
-</section>
-<section id="step-3.-activate-your-python-environment" class="level4">
-<h4 class="anchored" data-anchor-id="step-3.-activate-your-python-environment">Step 3. Activate your Python environment</h4>
-<p>You can activate the virtualenv in your project using the following command in a terminal:</p>
-<pre><code>source my_env/bin/activate</code></pre>
-<p>You can verify that you have activated the correct version of Python using the following command in a terminal:</p>
-<pre><code>which python</code></pre>
-</section>
-<section id="step-4.-install-python-packages-in-your-environment" class="level4">
-<h4 class="anchored" data-anchor-id="step-4.-install-python-packages-in-your-environment">Step 4. Install Python packages in your environment</h4>
-<p>You can install Python packages such as numpy, pandas, matplotlib, and other packages in your Python virtualenv by using pip install using the following command in a terminal:</p>
-<pre><code>pip install numpy pandas matplotlib
-
-pip install jupyter</code></pre>
-</section>
-<section id="step-5.-install-and-configure-reticulate-to-use-your-python-version" class="level4">
-<h4 class="anchored" data-anchor-id="step-5.-install-and-configure-reticulate-to-use-your-python-version">Step 5. Install and configure reticulate to use your Python version</h4>
-<p>Install and configure reticulate to use your Python version</p>
-<pre><code>install.packages("reticulate")</code></pre>
-<p>To configure reticulate to point to the Python executable in your virtualenv, create a file in your project directory called .Renviron with the following contents:</p>
-<pre><code>RETICULATE_PYTHON=quarto_env/bin/python</code></pre>
-<p>You’ll need to restart your R session for the setting to take effect. You can verify that reticulate is configured for the correct version of Python using the following command in your R console:</p>
-<pre><code>reticulate::py_config()</code></pre>
-</section>
-<section id="step-6.-publish-a-project-to-rstudio-connect" class="level4">
-<h4 class="anchored" data-anchor-id="step-6.-publish-a-project-to-rstudio-connect">Step 6. Publish a project to RStudio Connect</h4>
-<p>Create a markdown file with a title and source. You can then render your quarto markdown file to publish file.</p>
-<pre><code>---
-title: "Lecture 2"
-jupyter: python3
-
----</code></pre>
+<section id="step-5.-pushing-existing-repository-from-the-terminal-in-r" class="level4">
+<h4 class="anchored" data-anchor-id="step-5.-pushing-existing-repository-from-the-terminal-in-r">Step 5. Pushing existing repository from the terminal in R</h4>
+<ul>
+<li>To push an existing repository (e.g.&nbsp;this is a new repository named ‘test’ that was created)</li>
+</ul>
+<pre><code>  git remote add origin https://github.com/prajjwalpanday/test.git
+  git branch -M main
+  git push -u origin main</code></pre>
+<ul>
+<li>Navigate to the RStudio.proj which is the site you would like to upload the the new repository</li>
+<li>Render the local site</li>
+<li>Commit the local changes with Git</li>
+</ul>
+<pre><code>  git status
+  git add .
+  git commit -m "Add home page, navigation and theme"</code></pre>
+<ul>
+<li>Push changes to the remote repository</li>
+</ul>
+<pre><code>  git push -u origin main</code></pre>
 
 
 </section>

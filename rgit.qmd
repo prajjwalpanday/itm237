@@ -4,6 +4,29 @@ title: "Using Github with Quarto and Virtual Environments"
 
 Adapted from [Source](https://support.posit.co/hc/en-us/articles/360023654474-Installing-and-Configuring-Python-with-RStudio)
 
+#### Step 1. Set up Git in RStudio [link](https://docs.posit.co/ide/user/ide/guide/tools/version-control.html)
+
+Go to Tools --> Version Control --> Project Setup
+
+Once a Version Control system has been installed, it needs to be activated on the system by following these steps:
+- From the Tools menu, click Global Options
+- Click on the Git/SVN tab
+- Click Enable version control interface for RStudio projects
+- If necessary, enter the path for the Git or SVN executable where provided. A SSH key can be created or added for SSH if necessary.
+
+#### Step 2. Github Personal Action Token (PAT) [link](https://happygitwithr.com/https-pat.html)
+
+- Go to https://github.com/settings/tokens and click Generate Token.
+- Or, from R do: 'usethis::create_github_token()'
+- Click “Generate token”
+- Copy the generated PAT to your clipboard. Or leave that browser window open and available for a little while, so you can come back to copy the PAT. Provide this PAT next time a Git operation asks for your password.
+- You could even get out ahead of this and store the PAT explicitly right now. In R, call gitcreds::gitcreds_set() to get a prompt where you can paste your PAT.
+
+
+
+
+
+
 #### Step 1. Using Virtual Environments with Quarto and Github
 
 For Git users, in order to track project dependencies, continue below:

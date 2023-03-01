@@ -29,7 +29,7 @@ website:
         href: https://github.com/prajjwalpanday/itm237
     style: "floating"
     search: true
-    collapse-level: 1
+    collapse-level: 0
     
     contents:
       - section: "**Course Information**"

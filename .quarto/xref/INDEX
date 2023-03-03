@@ -163,5 +163,12 @@
   },
   "rgit.qmd": {
     "rgit.html": "ceb13f61"
+  },
+  "test.qmd": {
+    "test.html": "cf6a343f",
+    "test.tex": "d4d45c77"
+  },
+  "slides/slide_1.qmd": {
+    "slide_1.html": "02604c1c"
   }
 }

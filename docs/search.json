@@ -278,5 +278,40 @@
     "title": "ITM 237 - Introduction to Python",
     "section": "Schedule",
     "text": "Schedule\n\n\n\nDate\nTopic\nAssignments\n\n\n\n\nJan 17\n[Course Introduction & Syllabus]\n\n\n\nJan 24\n[Intro to Python]\n\n\n\nJan 31\n[XXX]\n\n\n\n2:00 - 2:30\n[XXX]\n\n\n\n2:20 - 3:00\n[XXX]"
+  },
+  {
+    "objectID": "test.html#getting-up",
+    "href": "test.html#getting-up",
+    "title": "test_ppt",
+    "section": "Getting up",
+    "text": "Getting up\n\nTurn off alarm\nGet out of bed"
+  },
+  {
+    "objectID": "test.html#going-to-sleep",
+    "href": "test.html#going-to-sleep",
+    "title": "test_ppt",
+    "section": "Going to sleep",
+    "text": "Going to sleep\n\nGet in bed\nCount sheep"
+  },
+  {
+    "objectID": "slides/slide_1.html#getting-up",
+    "href": "slides/slide_1.html#getting-up",
+    "title": "test_ppt",
+    "section": "Getting up",
+    "text": "Getting up\n\nTurn off alarm\nGet out of bed"
+  },
+  {
+    "objectID": "slides/slide_1.html#going-to-sleep",
+    "href": "slides/slide_1.html#going-to-sleep",
+    "title": "test_ppt",
+    "section": "Going to sleep",
+    "text": "Going to sleep\n\nGet in bed\nCount sheep"
+  },
+  {
+    "objectID": "lecture1.html",
+    "href": "lecture1.html",
+    "title": "Lecture 1",
+    "section": "",
+    "text": "Running Code in the Interactive Shell or Line\nPython is an interpreted language and you can run simple Python expressions and statements in the interactive programming environment called the shell. In Jupyter Notebook, we will run these in a ‘cell’.\n\n\nPrint Function\nWe can also force the output of a value by using the print function. The simples for would look like this.\nprint(<expression>)\nYou can also write a print function that includes two or more expressions separated by commas.\nprint(<expression>, ..., <expression>)\n\n#statements are interpreted one by one\nprint (\"Hello World\")\nprint (\"something else\")\nprint (\"2+2\")\n\nHello World\nsomething else\n2+2\n\n\n\n#Here are some escape sequences\na = \"Hello\\aFUGU\\aSHRIMP\"\nb = 'Hello\\tFUGU\\nSHRIMP' #single quotes work as well \nprint (a,b)\n\n#why do you think the output is like this?\n#try taking the escape sequences to find out\n\nHello\u0007FUGU\u0007SHRIMP Hello FUGU\nSHRIMP"
   }
 ]

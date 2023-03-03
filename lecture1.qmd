@@ -3,8 +3,9 @@ title: "Lecture 1"
 ---
 
 ### Materials:
-- Slides
-- [Code worksheet](/notebooks/code_1.ipynb)
+
+-   [Slides](/slides/slide_1.qmd)
+-   [Code worksheet](/notebooks/code_1.ipynb)
 
 #### What is Python?
 

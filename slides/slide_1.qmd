@@ -1,7 +1,6 @@
 ---
 title: "Data Reproducibility"
 author: "Prajjwal Panday"
-date: "last updated: `r Sys.Date()`"
 format: revealjs
 editor: visual
 ---

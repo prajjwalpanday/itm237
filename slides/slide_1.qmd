@@ -1,15 +1,60 @@
 ---
-title: "test_ppt"
+title: "Data Reproducibility"
+author: "Prajjwal Panday"
+date: "last updated: `r Sys.Date()`"
 format: revealjs
 editor: visual
 ---
 
-## Getting up
+## Data Reproducibility Principles
 
--   Turn off alarm
--   Get out of bed
+- Files are well organized and named, avoid spaces 
 
-## Going to sleep
+- Analysis process is clear and well explained. Comment as necessary 
 
--   Get in bed
--   Count sheep
+- Code will run the same every time, even if data values change 
+
+- Package dependency is clear. 
+
+
+# But first: What is a directory
+
+
+## Dealing with Directories
+
+- A directory is just a fancy name for a folder.
+
+- Your **working directory** is the folder that R "thinks" it lives in at the moment.
+
+- Code will run the same every time, even if data values change 
+
+- If you save things you have created, they save to your working directory by default.
+
+## Manage your Class Directory
+
+- Is it in a place you can easily find?
+
+- Does it have an informative name?
+
+- Are the files inside it well organized? 
+
+- Are they grouped by week, by lab sessions?
+
+## Paths
+
+- A **path** describes where a certain file or directory lives.
+
+```{python}
+import os
+current_path = os.getcwd()
+print(current_path)
+```
+- This files lives on my Macbook pro.
+
+- on my account ** Users/pkpanday/**
+
+- on my One Drive storage ** OneDrive-NicholsCollege/**
+
+# Try it
+
+Find the **path** to your class directory!

@@ -303,7 +303,7 @@
   {
     "objectID": "slides/slide_1.html#going-to-sleep",
     "href": "slides/slide_1.html#going-to-sleep",
-    "title": "test_ppt",
+    "title": "Data Reproducibility",
     "section": "Going to sleep",
     "text": "Going to sleep\n\nGet in bed\nCount sheep"
   },
@@ -313,5 +313,33 @@
     "title": "Lecture 1",
     "section": "",
     "text": "Running Code in the Interactive Shell or Line\nPython is an interpreted language and you can run simple Python expressions and statements in the interactive programming environment called the shell. In Jupyter Notebook, we will run these in a ‘cell’.\n\n\nPrint Function\nWe can also force the output of a value by using the print function. The simples for would look like this.\nprint(<expression>)\nYou can also write a print function that includes two or more expressions separated by commas.\nprint(<expression>, ..., <expression>)\n\n#statements are interpreted one by one\nprint (\"Hello World\")\nprint (\"something else\")\nprint (\"2+2\")\n\nHello World\nsomething else\n2+2\n\n\n\n#Here are some escape sequences\na = \"Hello\\aFUGU\\aSHRIMP\"\nb = 'Hello\\tFUGU\\nSHRIMP' #single quotes work as well \nprint (a,b)\n\n#why do you think the output is like this?\n#try taking the escape sequences to find out\n\nHello\u0007FUGU\u0007SHRIMP Hello FUGU\nSHRIMP"
+  },
+  {
+    "objectID": "slides/slide_1.html#data-reproducibility-principles",
+    "href": "slides/slide_1.html#data-reproducibility-principles",
+    "title": "Data Reproducibility",
+    "section": "Data Reproducibility Principles",
+    "text": "Data Reproducibility Principles\n\nFiles are well organized and named, avoid spaces\nAnalysis process is clear and well explained. Comment as necessary\nCode will run the same every time, even if data values change\nPackage dependency is clear."
+  },
+  {
+    "objectID": "slides/slide_1.html#dealing-with-directories",
+    "href": "slides/slide_1.html#dealing-with-directories",
+    "title": "Data Reproducibility",
+    "section": "Dealing with Directories",
+    "text": "Dealing with Directories\n\nA directory is just a fancy name for a folder.\nYour working directory is the folder that R “thinks” it lives in at the moment.\nCode will run the same every time, even if data values change\nIf you save things you have created, they save to your working directory by default."
+  },
+  {
+    "objectID": "slides/slide_1.html#manage-your-class-directory",
+    "href": "slides/slide_1.html#manage-your-class-directory",
+    "title": "Data Reproducibility",
+    "section": "Manage your Class Directory",
+    "text": "Manage your Class Directory\n\nIs it in a place you can easily find?\nDoes it have an informative name?\nAre the files inside it well organized?\nAre they grouped by week, by lab sessions?"
+  },
+  {
+    "objectID": "slides/slide_1.html#paths",
+    "href": "slides/slide_1.html#paths",
+    "title": "Data Reproducibility",
+    "section": "Paths",
+    "text": "Paths\n\nA path describes where a certain file or directory lives.\n\n.tiny-font[\n\n\n/Users/pkpanday/Library/CloudStorage/OneDrive-NicholsCollege/ITM237/itm237-site/slides\n\n\n] - This files lives on my Macbook pro.\n\non my account ** Users/pkpanday/**\non my One Drive storage ** OneDrive-NicholsCollege/**"
   }
 ]

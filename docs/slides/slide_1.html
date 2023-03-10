@@ -9,7 +9,8 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.1.251">
 
-  <title>ITM237 - test_ppt</title>
+  <meta name="author" content="Prajjwal Panday">
+  <title>ITM237 - Data Reproducibility</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -323,22 +324,63 @@
     <div class="slides">
 
 <section id="title-slide" class="center">
-  <h1 class="title">test_ppt</h1>
+  <h1 class="title">Data Reproducibility</h1>
+  <p class="author">Prajjwal Panday</p>
+  <p class="date">last updated: <code>r Sys.Date()</code></p>
 </section>
 
-<section id="getting-up" class="slide level2">
-<h2>Getting up</h2>
+<section id="data-reproducibility-principles" class="slide level2">
+<h2>Data Reproducibility Principles</h2>
 <ul>
-<li>Turn off alarm</li>
-<li>Get out of bed</li>
+<li><p>Files are well organized and named, avoid spaces</p></li>
+<li><p>Analysis process is clear and well explained. Comment as necessary</p></li>
+<li><p>Code will run the same every time, even if data values change</p></li>
+<li><p>Package dependency is clear.</p></li>
 </ul>
 </section>
-<section id="going-to-sleep" class="slide level2">
-<h2>Going to sleep</h2>
+<section>
+<section id="but-first-what-is-a-directory" class="title-slide slide level1 center">
+<h1>But first: What is a directory</h1>
+
+</section>
+<section id="dealing-with-directories" class="slide level2">
+<h2>Dealing with Directories</h2>
 <ul>
-<li>Get in bed</li>
-<li>Count sheep</li>
+<li><p>A directory is just a fancy name for a folder.</p></li>
+<li><p>Your <strong>working directory</strong> is the folder that R “thinks” it lives in at the moment.</p></li>
+<li><p>Code will run the same every time, even if data values change</p></li>
+<li><p>If you save things you have created, they save to your working directory by default.</p></li>
 </ul>
+</section>
+<section id="manage-your-class-directory" class="slide level2">
+<h2>Manage your Class Directory</h2>
+<ul>
+<li><p>Is it in a place you can easily find?</p></li>
+<li><p>Does it have an informative name?</p></li>
+<li><p>Are the files inside it well organized?</p></li>
+<li><p>Are they grouped by week, by lab sessions?</p></li>
+</ul>
+</section>
+<section id="paths" class="slide level2">
+<h2>Paths</h2>
+<ul>
+<li>A <strong>path</strong> describes where a certain file or directory lives.</li>
+</ul>
+<p>.tiny-font[</p>
+<div class="cell" data-execution_count="1">
+<div class="cell-output cell-output-stdout">
+<pre><code>/Users/pkpanday/Library/CloudStorage/OneDrive-NicholsCollege/ITM237/itm237-site/slides</code></pre>
+</div>
+</div>
+<p>] - This files lives on my Macbook pro.</p>
+<ul>
+<li><p>on my account ** Users/pkpanday/**</p></li>
+<li><p>on my One Drive storage ** OneDrive-NicholsCollege/**</p></li>
+</ul>
+</section></section>
+<section id="try-it" class="title-slide slide level1 center">
+<h1>Try it</h1>
+<p>Find the <strong>path</strong> to your class directory!</p>
 
 <div class="footer footer-default">
 

@@ -1,10 +1,7 @@
 ---
-title: "Lecture 5"
+title: "Research Challenges"
 ---
 
-# Why Python?
+# Research Challenges
 
--   open source
--   high level programming language
--   obvious, familiar mathematical notation like Matlab
--   as powerful for linear algebra as Matlab
+[FDC Presentation](https://www.canva.com/design/DAFrnm8oO3k/p16OPPZv3ZkP4wKJljwdZQ/edit?utm_content=DAFrnm8oO3k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
